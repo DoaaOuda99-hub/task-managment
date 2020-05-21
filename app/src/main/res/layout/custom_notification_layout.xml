@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/colorWhite"
+    >
+
+    <ImageView
+        android:id="@+id/iv_notification_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_todo_list"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_alarm_title"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/iv_notification_icon"
+        android:text="@string/taskManagement"
+        android:textColor="@color/colorDarkBlue"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/txt_alarm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alarm title"
+        android:layout_below="@+id/iv_notification_icon"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/txt_alarm_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/advice"
+        android:layout_below="@+id/txt_alarm_title"
+        android:textColor="@color/grey"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_done"
+        android:layout_below="@id/txt_alarm_note"
+        android:layout_alignParentEnd="true"
+        android:text="@string/done"
+        android:background="@drawable/btn_notification_selected"/>
+</RelativeLayout>

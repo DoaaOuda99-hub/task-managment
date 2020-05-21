@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AccountSettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_inner"
+            android:id="@+id/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_profile"
+                    android:id="@+id/img_profile"
+                    android:onClick="changeProfileImage"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_profile"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_camera"
+                    android:onClick="changeProfileImage"
+                    android:background="@drawable/custom_circular_bg"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/txt_username"
+                android:text="Username"
+                android:drawableEnd="@drawable/ic_edit"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:onClick="changeUsername"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_email"
+                android:focusable="false"
+                android:layout_gravity="center_horizontal"
+                android:drawableRight="@drawable/ic_edit"
+                android:drawableEnd="@drawable/ic_edit"
+                android:text="Email address@gmail.com"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:onClick="changeEmail"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="changePassword"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableStart="@drawable/ic_reset"
+                    android:drawableLeft="@drawable/ic_reset"
+                    android:drawablePadding="30dp"
+                    android:text="@string/change_password"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableLeft="@drawable/ic_google"
+                    android:drawableStart="@drawable/ic_google"
+                    android:drawablePadding="30dp"
+                    android:text="@string/google_connect"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="logout"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:drawableStart="@drawable/ic_logout"
+                    android:drawablePadding="30dp"
+                    android:text="@string/logout"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_version"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

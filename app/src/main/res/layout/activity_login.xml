@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorWhite"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+
+            android:src="@drawable/img_profile"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/img_profile"
+            android:gravity="top|start"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/light_gray_border"
+            />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/et_email"
+            android:gravity="top|start"
+            android:padding="10dp"
+            android:background="@drawable/light_gray_border"
+            />
+
+        <TextView
+            android:id="@+id/tv_forgetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:textStyle="bold"
+            android:layout_below="@id/et_password"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="2dp"
+            android:onClick="forgetPass"
+            />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/button_border"
+            android:text="@string/login"
+            android:layout_below="@+id/tv_forgetPass"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:onClick="login"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/button_border"
+            android:text="@string/login_with_google"
+            android:layout_below="@+id/btn_login"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:drawableStart="@drawable/ic_google"
+            android:padding="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_registered"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            android:onClick="signUp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

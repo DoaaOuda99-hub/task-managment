@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_date"
+        android:text="17"
+        android:textColor="@color/light_blue"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_day"
+        android:layout_below="@id/txt_date"
+        android:text="Tue"
+        android:textColor="@color/light_blue"
+        android:textSize="18sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_views"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@id/txt_day"
+        android:layout_alignTop="@id/txt_date">
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/circular_view"
+            android:background="@drawable/circular_view"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_blue"
+            android:layout_toEndOf="@id/circular_view"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_tasks"
+        android:layout_toEndOf="@id/txt_day"
+        android:layout_alignTop="@id/txt_date"
+        android:layout_below="@id/rl_views"
+        android:layout_alignStart="@id/rl_views"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

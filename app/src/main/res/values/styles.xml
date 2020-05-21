@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1A2980</item>
+        <item name="colorPrimaryDark">#0E1850</item>
+        <item name="colorAccent">#4DB6AC</item>
+        <item name="test">#F16868</item>
+        <item name="white">#FFFF</item>
+        <item name="line">#E9E6E6</item>
+        <item name="text_color">#616060</item>
+        <item name="border">#AEC5C4</item>
+    </style>
+
+    <style name="SwitchCompatTheme" >
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="TimePicker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#1A2980</item>
+    </style>
+
+</resources>

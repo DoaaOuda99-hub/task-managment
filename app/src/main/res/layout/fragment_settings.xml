@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:context=".fragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include
+            layout="@layout/toolbar_main"
+            android:id="@+id/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_account"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:drawableStart="@drawable/ic_account"
+                android:drawablePadding="30dp"
+                android:text="@string/account"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_lang"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:drawableStart="@drawable/ic_language"
+                android:drawableLeft="@drawable/ic_language"
+                android:drawablePadding="30dp"
+                android:text="@string/lang"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_mood"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:drawableStart="@drawable/ic_mood"
+                android:drawableLeft="@drawable/ic_mood"
+                android:drawablePadding="30dp"
+                android:text="@string/mood"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_alarm_settings"
+                android:drawableStart="@drawable/ic_notification"
+                android:drawableLeft="@drawable/ic_notification"
+                android:drawablePadding="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/alarm_settings"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_clock_patern"
+                android:drawableStart="@drawable/ic_clock"
+                android:drawableLeft="@drawable/ic_clock"
+                android:drawablePadding="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/clock_pattern"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_about"
+                android:drawableLeft="@drawable/ic_about"
+                android:drawableStart="@drawable/ic_about"
+                android:drawablePadding="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/about"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_feedback"
+                android:drawableStart="@drawable/ic_feedback"
+                android:drawableLeft="@drawable/ic_feedback"
+                android:drawablePadding="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/feedback"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_help"
+                android:drawableStart="@drawable/ic_question_mark"
+                android:drawableLeft="@drawable/ic_question_mark"
+                android:drawablePadding="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/help"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_share"
+                android:drawableStart="@drawable/ic_share"
+                android:drawableLeft="@drawable/ic_share"
+                android:drawablePadding="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/share"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

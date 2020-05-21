@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Time management</string>
+
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_password">هل نسيت كلمة السر؟</string>
+    <string name="login_with_google">تسجيل الدخول باستخدام جوجل</string>
+    <string name="not_registered">إان كنت لا تملك حساباً قم بتسجيل حساب</string>
+    <string name="registered">إن كنت تملك حساباً سجل دخول</string>
+    <string name="confirm_pass">تأكيد كلمة المرور</string>
+    <string name="sign_up">تسجيل حساب</string>
+    <string name="sign_up_with_google">تسجيل حساب باستخدام جوجل</string>
+
+    <string name="user_name">Username</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="forgetPass_msg">ادخل البريد الإلكتروني لإسترجاع كلمة المرور</string>
+    <string name="action">سوف نرسل إليك رابط علي البريد الإلكتروني لاستعادة كلمة المرور</string>
+
+    <string name="reset_pass">استعادة كلمة المرور</string>
+
+
+    <string name="calendar">التقويم</string>
+    <string name="task">جدول المهام</string>
+    <string name="history">الأرشيف</string>
+
+    <string name="settings">الإعدادات</string>
+    <string name="account">الحساب</string>
+    <string name="lang">اللغة</string>
+    <string name="mood">طريقة العرض</string>
+    <string name="alarm_settings">إعدادات المنبه</string>
+    <string name="sound_level">Sound level</string>
+    <string name="vibration">Vibration</string>
+    <string name="clock_pattern">Clock pattern</string>
+    <string name="about">About us</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Help</string>
+    <string name="share">Share</string>
+    <string name="notification">Notifiation</string>
+    <string name="activate_notification">Activate to get nofication</string>
+    <string name="reset_password">Reset password</string>
+    <string name="select_tone">Choose notification tone</string>
+    <string name="alarm_tone">Alarm tone</string>
+
+    <string name="google_connect">Connect with Google</string>
+    <string name="logout">Log out</string>
+    <string name="app_version">App current version is June.2019</string>
+    <string name="old_pass">Old password</string>
+    <string name="new_pass">New password</string>
+    <string name="confirm_new_pass">Confirm new password</string>
+    <string name="save">حفظ</string>
+    <string name="send">إرسال</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout_confirm">Are you sure you want to log out?</string>
+    <string name="light_mood">Light mood</string>
+    <string name="dark_mood">Dark mood</string>
+    <string name="en">الإنجليزية</string>
+    <string name="ar">العربية</string>
+    <string name="h12">12 hour</string>
+    <string name="h25">24 hour</string>
+    <string name="search">ابحث عن قائمة</string>
+
+    <string name="list">My list</string>
+    <string name="new_list">New list</string>
+    <string name="task_name">Task name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="priority">Priority</string>
+    <string name="Active">Active</string>
+    <string name="Note">Note</string>
+
+
+    <string name="list_name">List Name</string>
+    <string name="color">List Color</string>
+    <string name="icon">List Icon</string>
+
+    <string name="aboutApp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</string>
+
+    <string name="taskManagement">Task management</string>
+    <string name="alertReminder">your task alert after 2 minute</string>
+    <string name="advice">Anyone who has ever made anything of importance was disciplined </string>
+    <string name="done">done</string>
+
+    <string name="change_email">Change your email</string>
+
+    <string name="open_gallery">Open gallery</string>
+    <string name="open_camera">Open camera</string>
+
+    <string name="change_password">Change your password</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/colorWhite"
+    >
+
+    <ImageView
+        android:id="@+id/iv_notification_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_todo_list"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_alert_reminder"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/iv_notification_icon"
+        android:text="@string/taskManagement"
+        android:textColor="@color/colorDarkBlue"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_alert_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alertReminder"
+        android:layout_below="@+id/iv_notification_icon"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/advice"
+        android:layout_below="@+id/tv_alert_reminder"
+        android:textColor="@color/grey"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "72435355581",
+    "firebase_url": "https://time-managment-857e8.firebaseio.com",
+    "project_id": "time-managment-857e8",
+    "storage_bucket": "time-managment-857e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72435355581:android:7389f539aaa069af",
+        "android_client_info": {
+          "package_name": "com.example.timemanagment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72435355581-3hnr5kqg96q2vpj73ub5ipoiouamte54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.timemanagment",
+            "certificate_hash": "acb98275fd88c82c52f39628bc3670b6a4618dd8"
+          }
+        },
+        {
+          "client_id": "72435355581-afurknir5nmh7laoro4goell3d7hije3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJeBdL0S4GJDDyv4MH-rW9GwFxS9BjBVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72435355581-afurknir5nmh7laoro4goell3d7hije3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

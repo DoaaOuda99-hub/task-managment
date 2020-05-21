@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/reset_password"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_label"
+        android:id="@+id/et_old_pass"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/file_et_border"
+        android:hint="@string/old_pass"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_old_pass"
+        android:id="@+id/et_new_pass"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/file_et_border"
+        android:hint="@string/new_pass"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_new_pass"
+        android:id="@+id/et_confirm_pass"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/file_et_border"
+        android:hint="@string/confirm_new_pass"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_save"
+            android:text="@string/save"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@color/white"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_cancel"
+            android:text="@string/cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

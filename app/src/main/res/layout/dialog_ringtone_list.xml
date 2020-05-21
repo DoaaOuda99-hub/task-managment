@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:paddingLeft="15dp"
+    android:paddingStart="15dp"
+    android:paddingTop="30dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_label"
+        android:layout_alignParentTop="true"
+        android:text="@string/select_tone"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_label"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/rv_ringtone">
+    </android.support.v7.widget.RecyclerView>
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="2"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btn_save"
+        android:text="@string/save"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/white"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btn_cancel"
+        android:text="@string/cancel"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CalendarActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_profile"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="20dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_profile"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_username"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Username"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_email"
+                android:layout_below="@id/txt_username"
+                android:textSize="18sp"
+                android:text="Email address@gmail.com"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_months"
+            android:text="January"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginStart="50dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_year"
+            android:layout_below="@id/spinner_months"
+            android:text="2019"
+            android:textSize="18sp"
+            android:textColor="@color/grey"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@id/spinner_months"
+            android:layout_marginEnd="30dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_dates"
+            android:layout_below="@id/txt_year"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

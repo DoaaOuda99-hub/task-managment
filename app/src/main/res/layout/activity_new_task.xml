@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activities.NewTaskActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include
+            layout="@layout/toolbar_inner"
+            android:id="@+id/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/et_task_name"
+                android:hint="@string/task_name"
+                android:padding="15dp"
+                android:background="@drawable/file_et_border"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:weightSum="2">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/et_date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:text="@string/date"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:inputType="date" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:id="@+id/et_time"
+                    android:textColor="#000"
+                    android:text="@string/time"
+                    android:textAlignment="center"
+                    android:inputType="datetime" />
+
+            </LinearLayout>
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_repeat"
+                android:padding="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:hint="@string/repeat"
+                />
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_priority"
+                android:padding="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:hint="@string/priority"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Active"
+                    android:id="@+id/txt_active"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch_active"
+                    android:layout_toRightOf="@id/txt_active"
+                    android:layout_toEndOf="@id/txt_active"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="25dp"
+                    android:theme="@style/SwitchCompatTheme"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/et_note"
+                android:layout_marginTop="20dp"
+                android:hint="@string/Note"
+                android:background="@drawable/file_et_border"
+                android:textAlignment="textStart"
+                android:padding="15dp"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/linear"
+            android:layout_marginTop="30dp"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_save"
+                android:text="@string/save"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@color/white"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_cancel"
+                android:text="@string/cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

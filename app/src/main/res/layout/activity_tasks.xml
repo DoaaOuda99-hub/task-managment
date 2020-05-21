@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TasksActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_inner"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"/>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView_task"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/toolbar"
+        android:queryHint="Search a list"
+        android:background="@drawable/shadow_border"
+        android:layout_marginBottom="10dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_tasks"
+        android:layout_below="@+id/searchView_task"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/colorDarkBlue"
+        />
+
+    
+
+
+    
+
+</RelativeLayout>
