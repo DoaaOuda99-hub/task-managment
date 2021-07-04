@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static String dp_name = "TimeManagment";
+    private static String dp_name = "COVID-19";
     private static int dp_version = 1;
 
 
